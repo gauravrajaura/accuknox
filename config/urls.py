@@ -21,6 +21,7 @@ urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
     path("users/", include("accuknox.users.urls", namespace="users")),
+    path("social/", include("accuknox.social.urls", namespace="social")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
     # ...

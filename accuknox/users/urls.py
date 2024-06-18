@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import include, path
 
 from .views import user_detail_view
 from .views import user_redirect_view
@@ -9,4 +9,5 @@ urlpatterns = [
     path("~redirect/", view=user_redirect_view, name="redirect"),
     path("~update/", view=user_update_view, name="update"),
     path("<int:pk>/", view=user_detail_view, name="detail"),
+    path("api/", include('accuknox.users.api.urls'))
 ]
