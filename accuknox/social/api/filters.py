@@ -44,7 +44,6 @@ class FriendRequestFilterSet(FilterSet):
         elif value == 'pending':
             return queryset.filter(from_user=self.context.get('user'), status="pending")
         elif value == 'accepted':
-            print("from_user-----", self.context.get('user'))
             return queryset.filter(from_user=self.context.get('user'), status="accepted")
         elif value == 'friends':
             return queryset.filter(status="accepted")
