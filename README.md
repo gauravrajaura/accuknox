@@ -40,11 +40,13 @@ This project is a social networking API built using Django and Django Rest Frame
 
 3. **Build and Run the Docker Container Locally:**
 
+   *Ensure that docker compose is installed already and engine is running
+
     ```bash
     docker-compose -f docker-compose.local.yml build
     docker-compose -f docker-compose.local.yml up
     ```
 
-4. **Access the APIs:**
+5. **Access the APIs:**
 
     Use Postman or any API client to interact with the APIs. You can find the Postman collection here [POSTMAN COLLECTION](https://www.postman.com/material-saganist-86983182/workspace/accuknox/collection/36360618-c9194eab-04bb-4942-a96f-fb1ffd5cd6cd?action=share&creator=36360618&active-environment=36360618-b63f629b-d778-4eba-8430-151f28bd1618).
